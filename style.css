@@ -1,0 +1,57 @@
+/* Grid kapsayıcısını ayarlama */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 birim genişliğinde ana içerik, 1 birim genişliğinde yan çubuk */
+    gap: 20px; /* Elemanlar arasındaki boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Ana içerik */
+  .main-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Yan çubuk */
+  .sidebar {
+    background-color: #e9e9e9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Genişletilebilir içerik için temel ayarlar */
+  .expandable-content {
+    display: none; /* Başlangıçta gizli */
+    padding-top: 10px;
+  }
+  
+  .expandable-section button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .expandable-section button:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Genişletilebilir içerik açıldığında gösterme */
+  .expandable-section.active .expandable-content {
+    display: block;
+  }
+  
+  /* Responsive ayarları */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun düzeni */
+    }
+  }
