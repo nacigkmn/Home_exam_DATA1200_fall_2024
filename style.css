@@ -10,10 +10,19 @@ body {
 
 /* Başlık */
 header {
+  top: 0;
   background: #005b99;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
+}
+
+footer {
+  bottom: 0;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
 }
 
 header h1 {
@@ -75,16 +84,6 @@ caption{
   text-align: left;
   font-weight:bold ;
   margin-bottom: 1rem;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background: #333;
-  color: #fff;
-  padding: 1rem;
 }
 
 /* github page */
