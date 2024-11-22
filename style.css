@@ -66,7 +66,10 @@ main img {
   height: auto;
   margin: 1rem 0;
 }
-
+.o_met table{
+  margin-bottom: 5px;
+  width: 100%;
+}
 /* Table */
 table {
   width: 100%;
