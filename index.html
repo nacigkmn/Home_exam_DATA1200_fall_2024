@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathematical Modelling - OsloMet</title>
+    <title>M_OsloMet</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome için CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -23,216 +25,246 @@
 
         <section>
             <img src="images/math-model-1.jpg" alt="Math-Modeling">
-            <h2>Mathematical Modelling</h2>
+            <h2>Matematisk modellering og datavitenskap – ingeniør</h2>
+            <p>Bachelor program</p>
         </section>
-
         <section>
-            <h2>About the Course</h2>
-            <article>
-                <p>The Mathematical Modelling course focuses on...</p>
-            </article>
+            <table>
+             <thead>
+                 <th>Studiested</th>
+                 <th>Varighet</th>
+                 <th>Omfang</th>
+                 <th>Studiepoeng</th>
+             </thead>
+             <tbody>
+                 <td><a href="Studiested">Pilestredet i Oslo </a></td>
+                 <td>3 year</td>
+                 <td>Heltid</td>
+                 <td>180</td>
+             </tbody>
+            </table>
+         </section>
+        <section class="course">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown1">Less mmer</input>
+                <label for="dropdown1" class="dropdown-button">Opptakskrav og poeng</label>
+                <div class="dropdown-content">
+                    <p>For å søke på dette programmet må du ha generell studiekompetanse...</p>
+                    <p>Hvis du mangler generell studiekompetanse...</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown2">
+                <label for="dropdown2" class="dropdown-button">Slik søker du</label>
+                <div class="dropdown-content">
+                    <p>Du søker på Samordna opptak med studiekode 215 503...</p>
+                    <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier">Mer om å søke på bachelor.</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown3">
+                <label for="dropdown3" class="dropdown-button">Hva lærer du?</label>
+                <div class="dropdown-content">
+                    <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk...</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown4">
+                <label for="dropdown4" class="dropdown-button">Studiets oppbygging?</label>
+                <div class="dropdown-content">
+                    <section>
+                        <!-- 1. Year -->
+                        <input type="checkbox" id="year-1" hidden>
+                        <label for="year-1">
+                            <h2 class="toggle-heading">1. Year</h2>
+                        </label>
+                        <div class="year-content">
+                            <!-- 1st Year content (similar to your existing year content) -->
+                            <table>
+                                <caption>1. Semester</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Credits</th>
+                                        <th>About emne</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Diskret Matematikk</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Programmering</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teknologi og samfunn for programmerere</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA1100/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Innføring i modeller og beregninger</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO1100/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                    <!-- More subjects for 1st Year -->
+                                </tbody>
+                            </table>
+                            <table>
+                                <caption>2. Semester</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Credits</th>
+                                        <th>About emne</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matematikk 1000</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fysikk og kjemig</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE2101/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <!-- 2. Year -->
+                        <input type="checkbox" id="year-2" hidden>
+                        <label for="year-2">
+                            <h2 class="toggle-heading">2. Year</h2>
+                        </label>
+                        <div class="year-content">
+                            <!-- 2nd Year content -->
+                            <table>
+                                <caption>3. Semester</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Credits</th>
+                                        <th>About emne</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lineær algebra og introduksjon til gruppeteori</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Programmering</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                    <!-- More subjects for 2nd Year -->
+                                </tbody>
+                            </table>
+                            <table>
+                                <caption>4. Semester</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Credits</th>
+                                        <th>About emne</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Diskret Matematikk</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section>
+                        <!-- 3. Year -->
+                        <input type="checkbox" id="year-3" hidden>
+                        <label for="year-3">
+                            <h2 class="toggle-heading">3. Year</h2>
+                        </label>
+                        <div class="year-content">
+                            <table>
+                                <caption>5. Semester</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Credits</th>
+                                        <th>About emne</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Diskret Matematikk</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                    <!-- More subjects for 3rd Year -->
+                                </tbody>
+                            </table>
+                            <table>
+                                <caption>6. Semester</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Credits</th>
+                                        <th>About emne</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Programmering</td>
+                                        <td>10</td>
+                                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>                    
+    </section>
+        <section>
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown5">
+                <label for="dropdown5" class="dropdown-button">Hvordan foregår undervisningen?</label>
+                <div class="dropdown-content">
+                    <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk...</p>
+                </div>
+            </div>
         </section>
-
         <section>
-            <h2>Subjects Taught</h2>
-            <table>
-                <caption>1. Semester</caption>
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Credits</th>
-                        <th>About emne</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diskret Matematikk</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Programmering</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <caption>2. Semester</caption>
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Credits</th>
-                        <th>About emne</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diskret Matematikk</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Programmering</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <caption>3. Semester</caption>
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Credits</th>
-                        <th>About emne</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diskret Matematikk</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Programmering</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <caption>4. Semester</caption>
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Credits</th>
-                        <th>About emne</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diskret Matematikk</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Programmering</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <caption>5. Semester</caption>
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Credits</th>
-                        <th>About emne</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diskret Matematikk</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Programmering</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <caption>6.Semester</caption>
-                <thead>
-                    <tr>
-                        <th>Subject</th>
-                        <th>Credits</th>
-                        <th>About emne</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diskret Matematikk</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Programmering</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                    <tr>
-
-                        <td>Differential Equations</td>
-                        <td>10</td>
-                        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">les mer...</a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Spørsmål om utdanningen?</h3>
+            <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 OsloMet - Mathematical Modelling</p>
+        <h3>&copy; 2024 OsloMet - Mathematical Modelling</h3>
+        <address>
+            Oslo Metropolitan University - Storbyuniversitetet <br>
+            Postboks 4, St. Olavs plass <br>
+            0130 Oslo <br>
+            Tlf.: 67 23 50 00 <br>
+            <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+        </address>
+    
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com/oslomet" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/OsloMet" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/oslomet/" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/school/oslomet/?originalSubdomain=no" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        
     </footer>
+    
 </body>
 </html>

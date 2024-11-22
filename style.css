@@ -1,4 +1,4 @@
-/* Genel Sayfa Stili */
+/* Genel stil */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -8,28 +8,18 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Başlık */
+/* Header */
 header {
-  top: 0;
   background: #005b99;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
 }
 
-footer {
-  bottom: 0;
-  text-align: center;
-  background: #333;
-  color: #fff;
-  padding: 1rem;
-}
-
 header h1 {
   margin: 0;
 }
 
-/* Menü */
 nav ul {
   list-style: none;
   padding: 0;
@@ -49,7 +39,13 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Ana İçerik */
+nav ul li a:hover {
+  color: white;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Main Content */
 main {
   padding: 2rem;
   max-width: 900px;
@@ -62,70 +58,135 @@ main img {
   margin: 1rem 0;
 }
 
-/* Tablolar */
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 table th, table td {
-  padding: 0.5rem;
+  padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
 }
 
 table th {
-  background-color: #eee;
+  background-color: #005b99;
+  color: white;
 }
 
-caption{
-  margin-left: 0;
-  text-align: left;
-  font-weight:bold ;
-  margin-bottom: 1rem;
+/* Dropdown Button */
+.dropdown {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-/* github page */
-git_main {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
+.dropdown-button {
+  display: block;
+  width: 100%;
   padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-git_main h2 {
+.dropdown-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.toggle-heading {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.toggle-heading:hover {
+  background-color: #005b99;
+}
+
+/* İçerik Gösterimi */
+.year-content {
+  display: none;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+}
+
+/* Checkbox seçili ise içerikleri göster */
+input[type="checkbox"]:checked ~ .year-content {
+  display: block;
+}
+
+input[type="checkbox"]:checked ~ .dropdown-content {
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
   text-align: center;
 }
 
-block {
+footer h3 {
+  margin: 0;
+}
+
+footer address {
+  margin-top: 1rem;
+  font-style: normal;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Social Links */
+ul.social-links {
+  list-style: none;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-block img {
-  max-width: 60%;
-  height: auto;
-  margin: 20px;
-  border-radius: 5px;
-  object-fit: cover;
+ul.social-links li a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
 
-block text {
-  max-width: 40%;
-  margin: 20px;
-}
-
-block h3 {
-  font-size: 1.2em;
-  color: #333;
-}
-
-block p {
-  color: #555;
+ul.social-links li a:hover {
+  color: #007bff;
 }
