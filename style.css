@@ -67,10 +67,6 @@ main img {
   margin: 1rem 0;
 }
 
-.o_met table{
-  margin-bottom: 10px;
-}
-
 /* Table */
 table {
   width: 100%;
@@ -154,6 +150,10 @@ input[type="checkbox"]:checked ~ .year-content {
   display: block;
 }
 
+input[type="checkbox"]:checked ~ .dropdown-content {
+  display: block;
+}
+
 /* Genel stil */
 .andre {
   font-family: Arial, sans-serif;
@@ -161,7 +161,7 @@ input[type="checkbox"]:checked ~ .year-content {
 }
 
 .andre h2 {
-  text-align: left;
+  text-align: center;
 }
 
 .andre hr {
@@ -178,7 +178,7 @@ input[type="checkbox"]:checked ~ .year-content {
 }
 
 .program-liste > li {
-  border: 0px solid #ccc;
+  border: 0;
   padding: 15px;
   border-radius: 5px;
   background-color: #f9f9f9;
@@ -212,6 +212,7 @@ input[type="checkbox"]:checked ~ .year-content {
 .program-liste > li .detaljer span {
   white-space: nowrap; /* Yazıların bir satırda kalmasını sağlar */
 }
+
 
 /* Footer */
 footer {
@@ -301,5 +302,5 @@ block h3 {
 }
 
 block p {
-  color: #555;
+  color: #555;
 }
