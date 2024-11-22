@@ -67,6 +67,10 @@ main img {
   margin: 1rem 0;
 }
 
+.o_met table{
+  margin-bottom: 10px;
+}
+
 /* Table */
 table {
   width: 100%;
@@ -150,10 +154,6 @@ input[type="checkbox"]:checked ~ .year-content {
   display: block;
 }
 
-input[type="checkbox"]:checked ~ .dropdown-content {
-  display: block;
-}
-
 /* Genel stil */
 .andre {
   font-family: Arial, sans-serif;
@@ -161,8 +161,7 @@ input[type="checkbox"]:checked ~ .dropdown-content {
 }
 
 .andre h2 {
-  text-align: left
-
+  text-align: left;
 }
 
 .andre hr {
@@ -174,39 +173,40 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-direction: column; /* Elemanları dikey hizalar */
-  gap: 20px; /* Her eleman arasına boşluk ekler */
-  align-items: center; /* Elemanları ortalar */
+  flex-direction: column;
+  gap: 20px;
 }
 
 .program-liste > li {
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   padding: 15px;
   border-radius: 5px;
   background-color: #f9f9f9;
-  width: 100%;
-  text-align: center;
+  display: flex; /* Esnek kutu yapısı */
+  flex-direction: column;
+  align-items: flex-start; /* İçeriği sola hizalar */
+  gap: 10px;
 }
 
-/* Üst bağlantı */
-.program-liste > li a {
+/* Bölüm Başlıkları */
+.bolum-navn {
   text-decoration: none;
   color: #0077cc;
   font-size: 1.2em;
   font-weight: bold;
-  list-style: none;
+  margin-bottom: 5px;
 }
 
-.program-liste > li a:hover {
+.bolum-navn:hover {
   text-decoration: underline;
 }
 
-/* Alt detaylar */
+/* Detaylar */
 .program-liste > li .detaljer {
   display: flex; /* Detayları yatay hizalar */
-  justify-content: space-around; /* Elemanları eşit aralıklarla dağıtır */
-  margin-top: 10px;
+  gap: 10px; /* Pipe sembollerine yer bırakır */
   font-size: 0.9em;
+  color: #555;
 }
 
 .program-liste > li .detaljer span {
