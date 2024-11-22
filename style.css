@@ -154,6 +154,65 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   display: block;
 }
 
+/* Genel stil */
+.andre {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.andre h2 {
+  text-align: left
+
+}
+
+.andre hr {
+  margin: 10px 0;
+}
+
+/* Liste stili */
+.program-liste {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Elemanları dikey hizalar */
+  gap: 20px; /* Her eleman arasına boşluk ekler */
+  align-items: center; /* Elemanları ortalar */
+}
+
+.program-liste > li {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  width: 100%;
+  text-align: center;
+}
+
+/* Üst bağlantı */
+.program-liste > li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-size: 1.2em;
+  font-weight: bold;
+  list-style: none;
+}
+
+.program-liste > li a:hover {
+  text-decoration: underline;
+}
+
+/* Alt detaylar */
+.program-liste > li .detaljer {
+  display: flex; /* Detayları yatay hizalar */
+  justify-content: space-around; /* Elemanları eşit aralıklarla dağıtır */
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.program-liste > li .detaljer span {
+  white-space: nowrap; /* Yazıların bir satırda kalmasını sağlar */
+}
+
 /* Footer */
 footer {
   background-color: #333;
