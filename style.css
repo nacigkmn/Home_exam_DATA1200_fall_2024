@@ -377,3 +377,52 @@ article h2{
 .test3{
   width: 50%;
 }
+
+/*==================================== 6. Screen control ==============================================*/
+
+/* Base styles (for mobile screens) are already defined */
+
+/* For tablets and small laptops (e.g., 768px to 1024px) */
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  header {
+    padding: 0 20px;
+  }
+
+  .git_main {
+    padding: 50px;
+  }
+
+  .block img {
+    max-width: 50%; /* Reduce image size */
+  }
+}
+
+/* For wide screens (e.g., laptops and desktops, 1024px to 1440px) */
+@media (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .git_main {
+    padding: 80px;
+  }
+
+  .block {
+    gap: 2rem; /* Add space between content */
+  }
+}
+
+/* For ultra-wide screens (e.g., 1440px and above) */
+@media (min-width: 1440px) {
+  main {
+    max-width: 1400px; /* Allow content to stretch more */
+  }
+
+  .block img {
+    max-width: 70%; /* Allow images to grow */
+  }
+}
