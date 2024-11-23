@@ -308,3 +308,39 @@ block h3 {
 block p {
   color:#555
 }
+
+/*============================ 5. Accessibility.html ===================================*/
+
+article{
+  padding: 100px;
+}
+article .title {
+  text-align: center;
+}
+article h2{
+  margin-left: 20px;
+}
+
+.result-box{
+  width: 99%;
+  margin: 20px;
+  
+}
+.result{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.result img{
+  width: 80%;
+  
+}
+
+.last-result{
+  width: 100%;
+  text-align: center;
+}
+.test3{
+  width: 50%;
+
+}
