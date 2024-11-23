@@ -12,6 +12,7 @@
         <logo><img src="images/oslomet_logo.png" alt=""> </logo>
         <nav>
             <ul>
+                <!--These are navigation bar elements which directs to other pages-->
                 <li><a href="./accessibility.html">Accessibility</a></li>
                 <li><a href="./github.html">GitHub</a></li>
                 <li><a href="./activity_page.html">Activity</a></li>
@@ -20,14 +21,16 @@
     </header>
 
     <main>
-
         <section>
-            <img src="images/math-model-1.jpg" alt="An image representing mathematical modeling">
-            <h2>Matematisk modellering og datavitenskap – ingeniør</h2>
+            <img src="images/math-model-1.jpg" alt="An image representing mathematical modeling"
+            title="An image representing mathematical modeling">
+            <a href="https://pixabay.com/photos/math-work-mathematics-formulas-4711302/">Bilde fra wwww.pixabay.com</a>
+            <h2>Matematisk modellering og datavitenskap – ingeniør</h2> <!--This is the name of bachelor department.-->
             <p>Bachelor program</p>
         </section>
         <section class="o_met">
             <table>
+            <!--Table header is defined here.-->
              <thead>
                 <tr>
                  <th>Studiested</th>
@@ -36,6 +39,7 @@
                  <th>Studiepoeng</th>
                 </tr>
              </thead>
+             <!--Table body is defined here.-->
              <tbody>
                 <tr>
                  <td><a href="https://www.oslomet.no/om/studiested-pilestredet"
@@ -48,6 +52,7 @@
             </table>
          </section>
         <section class="course">
+            <!--Here we have 5 different dropdown lists which contain different subjects.-->
             <div class="dropdown">
                 <input type="checkbox" id="dropdown1" hidden/>
                 <label for="dropdown1" class="dropdown-button">Opptakskrav og poeng</label>
@@ -75,8 +80,9 @@
             </div>
             <div class="dropdown">
                 <input type="checkbox" id="dropdown4" hidden>
-                <label for="dropdown4" class="dropdown-button">Studiets oppbygging?</label>
+                <label for="dropdown4" class="dropdown-button">Studiets oppbygging</label>
                 <div class="dropdown-content">
+                    <!-- 1. Year -->
                     <section>
                         <input type="checkbox" id="year-1" hidden>
                         <label for="year-1">
@@ -87,9 +93,9 @@
                                 <caption>1. Semester</caption>
                                 <thead>
                                     <tr>
-                                        <th>Subject</th>
+                                        <th>Course name</th>
                                         <th>Credits</th>
-                                        <th>About emne</th>
+                                        <th>Course description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -119,9 +125,9 @@
                                 <caption>2. Semester</caption>
                                 <thead>
                                     <tr>
-                                        <th>Subject</th>
+                                        <th>Course name</th>
                                         <th>Credits</th>
-                                        <th>About emne</th>
+                                        <th>Course description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -156,9 +162,9 @@
                                 <caption>3. Semester</caption>
                                 <thead>
                                     <tr>
-                                        <th>Subject</th>
+                                        <th>Course name</th>
                                         <th>Credits</th>
-                                        <th>About emne</th>
+                                        <th>Course description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -183,9 +189,9 @@
                                 <caption>4. Semester</caption>
                                 <thead>
                                     <tr>
-                                        <th>Subject</th>
+                                        <th>Course name</th>
                                         <th>Credits</th>
-                                        <th>About emne</th>
+                                        <th>Course description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -214,9 +220,9 @@
                                 <caption>5. Semester</caption>
                                 <thead>
                                     <tr>
-                                        <th>Subject</th>
+                                        <th>Course name</th>
                                         <th>Credits</th>
-                                        <th>About emne</th>
+                                        <th>Course description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -241,9 +247,9 @@
                                 <caption>6. Semester</caption>
                                 <thead>
                                     <tr>
-                                        <th>Subject</th>
+                                        <th>Course name</th>
                                         <th>Credits</th>
-                                        <th>About emne</th>
+                                        <th>Course description</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -271,10 +277,12 @@
                 </div>
             </div>
         </section>
+        <!--Here we have an aside tag.-->
         <aside>
             <h3>Spørsmål om utdanningen?</h3>
             <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student" title="Links to contact schema">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
         </aside>
+        <!--Inside this tag, we have different departments, if you are interested in...-->
         <section class="andre">
             <h2><span>Du er kanskje også interessert i disse?</span></h2>
             <hr>
