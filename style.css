@@ -68,7 +68,7 @@ main img {
   margin: 1rem 0;
 }
 .o_met table{
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   width: 100%;
 }
 /* Table */
@@ -97,9 +97,9 @@ table th {
 
 .dropdown-button {
   display: block;
-  width: 100%;
+  width: 98%;
   padding: 10px;
-  background-color: #007bff;
+  background-color:#0056b3;
   color: white;
   font-size: 16px;
   text-align: left;
@@ -109,7 +109,7 @@ table th {
 }
 
 .dropdown-button:hover {
-  background-color: #0056b3;
+  background-color:#007bff ;
 }
 
 /* Dropdown Content */
@@ -120,7 +120,7 @@ table th {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
-  width: 100%;
+  width: 98%;
 }
 
 .toggle-heading {
@@ -142,7 +142,7 @@ table th {
 /* İçerik Gösterimi */
 .year-content {
   display: none;
-  padding: 1rem;
+  padding: 0rem;
   background-color: #f9f9f9;
   border-radius: 5px;
   margin-top: 1rem;
@@ -193,7 +193,7 @@ input[type="checkbox"]:checked ~ .dropdown-content {
 }
 
 /* Bölüm Başlıkları */
-.bolum-navn {
+.avdeling {
   text-decoration: none;
   color: #0077cc;
   font-size: 1.2em;
@@ -201,7 +201,7 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   margin-bottom: 5px;
 }
 
-.bolum-navn:hover {
+.avdeling:hover {
   text-decoration: underline;
 }
 
