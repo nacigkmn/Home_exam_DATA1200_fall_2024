@@ -347,3 +347,17 @@ article h2{
   width: 50%;
 
 }
+
+/*======================= Activity.html =====================================*/
+
+article {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article h2 {
+  color: #00531d;
+}
+
+article .imagepair {
+  margin-bottom: 20px;
+}
