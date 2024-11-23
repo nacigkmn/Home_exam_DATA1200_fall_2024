@@ -133,6 +133,20 @@ main img {
   height: auto;
   margin: 1rem 0;
 }
+
+.image-source {
+  font-size: 0.8rem; 
+  text-align: left; 
+  margin-top: 0; 
+  color: #555; 
+  margin-top: 0;
+}
+
+.image-source a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
 .o_met table{
   margin-bottom: 10px;
   width: 100%;
