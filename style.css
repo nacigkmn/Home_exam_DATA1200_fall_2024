@@ -333,27 +333,27 @@ aside h3 {
 
 /*==================================== 4. activity.html ==============================================*/
 
-article {
+.activ_text {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px;
 }
 
-article h2 {
+.activ_text h2 {
   color: #00531d;
+  margin-top: 50px;
 }
 
-article .imagepair {
+.activ_text .imagepair {
   margin-bottom: 20px;
 }
 
 /*==================================== 5. accessibility.html ==============================================*/
 
-article{
+.access_text{
   padding: 100px;
 }
-article .title {
-  text-align: center;
-}
-article h2{
+
+.access_text h2{
   margin-left: 20px;
 }
 
