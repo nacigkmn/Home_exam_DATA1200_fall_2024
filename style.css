@@ -1,4 +1,21 @@
-/* Genel stil */
+/*
+  CONTENT TABLE
+
+  1. Common parts
+    a. body
+    b. header
+    c. footer
+  2. index.html
+  3. github.html
+  4. activity.html
+  5. accessibility.html 
+
+*/
+
+/*==================================== 1. Common Parts ==============================================*/
+
+
+/* =================================== a. body ==============================*/
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -8,7 +25,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Header */
+/* =================================== b. header ==============================*/
 header {
   position: fixed;
   display: flex;
@@ -53,6 +70,55 @@ nav ul li a:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
   transition: text-shadow 0.3s ease, color 0.3s ease;
 }
+
+/* =================================== c. footer ==============================*/
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer h3 {
+  margin: 0;
+}
+
+footer address {
+  margin-top: 1rem;
+  font-style: normal;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Social media links */
+ul.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+ul.social-links li a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+ul.social-links li a:hover {
+  color: #007bff;
+}
+
+
+/*==================================== 2. index.html ==============================================*/
 
 /* Main Content */
 main {
@@ -139,7 +205,7 @@ table th {
   background-color: #005b99;
 }
 
-/* İçerik Gösterimi */
+/* Content viewer */
 .year-content {
   display: none;
   padding: 0rem;
@@ -149,7 +215,7 @@ table th {
   border: 1px solid #ddd;
 }
 
-/* Checkbox seçili ise içerikleri göster */
+/* It shows content after click */
 input[type="checkbox"]:checked ~ .year-content {
   display: block;
 }
@@ -158,7 +224,7 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   display: block;
 }
 
-/* Genel stil */
+/* General style */
 .andre {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -172,7 +238,7 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   margin: 10px 0;
 }
 
-/* Liste stili */
+/*List style*/
 .program-liste {
   list-style: none;
   padding: 0;
@@ -186,13 +252,13 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   padding: 15px;
   border-radius: 5px;
   background-color: #f9f9f9;
-  display: flex; /* Esnek kutu yapısı */
+  display: flex; 
   flex-direction: column;
-  align-items: flex-start; /* İçeriği sola hizalar */
+  align-items: flex-start;
   gap: 10px;
 }
 
-/* Bölüm Başlıkları */
+/* Program title */
 .avdeling {
   text-decoration: none;
   color: #0077cc;
@@ -205,92 +271,45 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   text-decoration: underline;
 }
 
-/* Detaylar */
+/* Program details */
 .program-liste > li .detaljer {
-  display: flex; /* Detayları yatay hizalar */
-  gap: 10px; /* Pipe sembollerine yer bırakır */
+  display: flex; 
+  gap: 10px;
   font-size: 0.9em;
   color: #555;
 }
 
 .program-liste > li .detaljer span {
-  white-space: nowrap; /* Yazıların bir satırda kalmasını sağlar */
+  white-space: nowrap;
 }
 
 aside h3 {
   margin-left: 0;
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
 
-footer h3 {
-  margin: 0;
-}
-
-footer address {
-  margin-top: 1rem;
-  font-style: normal;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Social Links */
-ul.social-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-ul.social-links li a {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-ul.social-links li a:hover {
-  color: #007bff;
-}
-
-
-/* ======================================== 3. Github.html ===================================================*/
-git_main {
+/*==================================== 3. github.html ==============================================*/
+.git_main {
   display: flex;
   flex-direction: column;
   max-width: 100%;
   padding: 100px;
 }
 
-git_main h2 {
+.git_main h2 {
   text-align: center;
 }
 
-git_main block {
+.block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  border: 1px solid #090101;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-block img {
+.block img {
   max-width: 60%;
   height: auto;
   margin: 20px;
@@ -298,21 +317,35 @@ block img {
   object-fit: cover;
 }
 
-block text {
+.block text {
   max-width: 40%;
   margin: 20px;
 }
 
-block h3 {
+.block h3 {
   font-size: 1.2em;
   color: #333;
 }
 
-block p {
+.block p {
   color:#555
 }
 
-/*============================ 5. Accessibility.html ===================================*/
+/*==================================== 4. activity.html ==============================================*/
+
+article {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article h2 {
+  color: #00531d;
+}
+
+article .imagepair {
+  margin-bottom: 20px;
+}
+
+/*==================================== 5. accessibility.html ==============================================*/
 
 article{
   padding: 100px;
@@ -327,7 +360,6 @@ article h2{
 .result-box{
   width: 99%;
   margin: 20px;
-  
 }
 .result{
   width: 50%;
@@ -336,7 +368,6 @@ article h2{
 }
 .result img{
   width: 80%;
-  
 }
 
 .last-result{
@@ -345,19 +376,53 @@ article h2{
 }
 .test3{
   width: 50%;
-
 }
 
-/*======================= Activity.html =====================================*/
+/*==================================== 6. Screen control ==============================================*/
 
-article {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Base styles (for mobile screens) are already defined */
+
+/* For tablets and small laptops (e.g., 768px to 1024px) */
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  header {
+    padding: 0 20px;
+  }
+
+  .git_main {
+    padding: 50px;
+  }
+
+  .block img {
+    max-width: 50%; /* Reduce image size */
+  }
 }
 
-article h2 {
-  color: #00531d;
+/* For wide screens (e.g., laptops and desktops, 1024px to 1440px) */
+@media (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .git_main {
+    padding: 80px;
+  }
+
+  .block {
+    gap: 2rem; /* Add space between content */
+  }
 }
 
-article .imagepair {
-  margin-bottom: 20px;
+/* For ultra-wide screens (e.g., 1440px and above) */
+@media (min-width: 1440px) {
+  main {
+    max-width: 1400px; /* Allow content to stretch more */
+  }
+
+  .block img {
+    max-width: 70%; /* Allow images to grow */
+  }
 }
