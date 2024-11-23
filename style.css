@@ -217,6 +217,9 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   white-space: nowrap; /* Yazıların bir satırda kalmasını sağlar */
 }
 
+aside h3 {
+  margin-left: 0;
+}
 
 /* Footer */
 footer {
