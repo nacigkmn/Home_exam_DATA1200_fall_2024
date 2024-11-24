@@ -257,7 +257,7 @@ input[type="checkbox"]:checked ~ .dropdown-content {
 }
 
 .andre h2 {
-  text-align: center;
+  text-align: left;
 }
 
 .andre hr {
